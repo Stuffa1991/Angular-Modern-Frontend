@@ -1,0 +1,35 @@
+//MAIN SASS FILE
+//Include everything in here
+@import "bourbon/bourbon";
+
+//Bourbon - false if disabled
+$prefix-for-webkit:    true;
+$prefix-for-mozilla:   true;
+$prefix-for-microsoft: true;
+$prefix-for-opera:     true;
+$prefix-for-spec:      true;
+
+$background-color: white;
+$primary-text-color: #7e7f84;
+$orange-color: #f45a40;
+$grey-color: #eeeeee;
+
+@import "/materialize/materialize";
+
+//Base
+@import "partials/base";
+
+//Nav
+@import "partials/nav";
+
+//Slider
+@import "partials/slider";
+
+//Main
+@import "partials/main";
+
+//Product page
+@import "partials/product-page";
+
+//Footer
+@import "partials/footer";
