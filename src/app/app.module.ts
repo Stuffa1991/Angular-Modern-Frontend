@@ -29,8 +29,7 @@ import { AboutComponent } from './about';
 import { NoContentComponent } from './no-content';
 import { XLargeDirective } from './home/x-large';
 
-import '../styles/styles.scss';
-import '../styles/headings.css';
+import '../styles/main.scss';
 
 // Application wide providers
 const APP_PROVIDERS = [
