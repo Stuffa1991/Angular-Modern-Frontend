@@ -22,7 +22,11 @@ newsletter {
 		button {
 			@include margin(null null null 6px);
 			vertical-align: middle;
-			background-color: #ff674f;
+			$button: #ff674f;
+			background-color: $button;
+			&:active, &:hover {
+				background-color: lighten($button, 5%);
+			}
 		}
 	}
 }
@@ -52,6 +56,10 @@ foot {
 			&:hover, &:active {
 				text-decoration: underline;
 			}
+		}
+
+		.col {
+			padding: 0;
 		}
 	}
 }
