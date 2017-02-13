@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { IProduct, DataService } from '../data/';
 
@@ -12,6 +12,11 @@ export class FrontPageComponent implements OnInit {
  
  constructor(private _dataService:DataService) {
 
+ }
+
+ public ngAfterViewInit() {
+ 	console.log('Hello');
+ 	$('.carousel.carousel-slider').carousel({fullWidth: true});
  }
 
  public ngOnInit() {

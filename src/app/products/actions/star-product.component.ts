@@ -1,19 +1,23 @@
-import { Component, Input, Output, EventEmitter, OnChanges } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 
 @Component({
  selector: 'star-rating',
  templateUrl: 'star-product.component.html'
 })
 
-export class StarProductComponent {
+export class StarProductComponent implements OnInit {
  @Output() public starClicked: EventEmitter<number> = new EventEmitter<number>();
  @Input() public stars:number;
  public highestRating = 5;
- public initialValue = 0;
+ public initialValue;
 
  constructor() {}
 
- public range(value:number){ 
+ public ngOnInit () {
+   this.initialValue = this.stars;
+ }
+
+ public range(value:number){
   let a = []; 
   for(let i = 0; i < this.highestRating; ++i) 
    { a.push(i+1) } 
@@ -21,17 +25,16 @@ export class StarProductComponent {
  }
 
  public onClick(stars:number){
-  this.stars = stars;
   this.initialValue = stars;
+  this.stars = stars;
   this.starClicked.emit(this.stars);
  }
 
- public onHover(stars:number, initial: number){
-  this.initialValue = initial;
-  this.stars = stars;
+ public onHover(hoverStar:number){
+  this.stars = hoverStar;
  }
 
- public onHoverEnd(){
-  this.stars = this.initialValue;
+ public onHoverEnd(initial:number){
+  this.stars = initial;
  }
 }

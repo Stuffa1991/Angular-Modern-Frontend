@@ -30,6 +30,9 @@ import { FrontPageComponent } from './frontpage';
 import { FavoriteProductComponent, LikeProductComponent, StarProductComponent } from './products';
 
 import '../styles/main.scss';
+import "materialize-css";
+import "angular2-materialize";
+import {MaterializeDirective} from "angular2-materialize";
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -50,6 +53,7 @@ type StoreType = {
   bootstrap: [ AppComponent ],
   declarations: [
     AppComponent,
+    MaterializeDirective,
     NoContentComponent,
     FrontPageComponent,
     UpperNavComponent,
