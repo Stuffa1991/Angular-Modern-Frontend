@@ -24,10 +24,10 @@ import { ROUTES } from './app.routes';
 import { AppComponent } from './app.component';
 import { APP_RESOLVER_PROVIDERS } from './app.resolver';
 import { AppState, InternalStateType } from './app.service';
-import { HomeComponent } from './home';
-import { AboutComponent } from './about';
 import { NoContentComponent } from './no-content';
-import { XLargeDirective } from './home/x-large';
+import { UpperNavComponent, NavigationComponent, FootComponent, NewsletterComponent } from './common';
+import { FrontPageComponent } from './frontpage';
+import { FavoriteProductComponent, LikeProductComponent, StarProductComponent } from './products';
 
 import '../styles/main.scss';
 
@@ -50,10 +50,15 @@ type StoreType = {
   bootstrap: [ AppComponent ],
   declarations: [
     AppComponent,
-    AboutComponent,
-    HomeComponent,
     NoContentComponent,
-    XLargeDirective
+    FrontPageComponent,
+    UpperNavComponent,
+    NavigationComponent,
+    FootComponent,
+    NewsletterComponent,
+    FavoriteProductComponent,
+    LikeProductComponent,
+    StarProductComponent
   ],
   imports: [ // import Angular's modules
     BrowserModule,

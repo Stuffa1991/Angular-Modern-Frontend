@@ -7,6 +7,9 @@ import {
   ApplicationRef,
   enableProdMode
 } from '@angular/core';
+
+import { DataService } from './data';
+
 // Environment Providers
 let PROVIDERS: any[] = [
   // common env directives
@@ -28,6 +31,7 @@ if ('production' === ENV) {
 
   PROVIDERS = [
     ...PROVIDERS,
+    DataService
     // custom providers in production
   ];
 
@@ -47,6 +51,7 @@ if ('production' === ENV) {
   // Development
   PROVIDERS = [
     ...PROVIDERS,
+    DataService
     // custom providers in development
   ];
 

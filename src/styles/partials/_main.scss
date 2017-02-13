@@ -43,12 +43,13 @@ main {
 		.product-rating {
 			position: absolute;
 			padding:10px;
+			@include user-select(none);
+			
 			i {
 				color: $orange-color;
 				width: 16px;
 
 				&:hover, &:active {
-					color: $grey-color;
 					cursor: pointer;
 				}
 			}
@@ -58,14 +59,22 @@ main {
 		.card-content {
 			border: 1px solid $grey-color;
 		    padding: 0px;
-			
+			@include box-sizing(border-box);
+
 			img{
 				border-top: 1px solid $grey-color;
 				padding: 20px;
 			}
 		    p {
-		    	border-top: 1px solid $grey-color;
+		    	display: -webkit-box;
+			    -webkit-line-clamp: 5;
+			    -webkit-box-orient: vertical;
+			    overflow: hidden;
+			    text-overflow: ellipsis;
+			    height:129px; /* fallback */
+  		    	border-top: 1px solid $grey-color;
 		    	@include padding(20px 10px 20px 10px);
+
 		    }
 		}
 		
@@ -80,6 +89,7 @@ main {
 
 			.product-favorite {
 				i {
+					@include user-select(none);
 					cursor:pointer;
 				}
 			}

@@ -1,0 +1,4 @@
+<ng-container *ngFor="let number of range(highestRating)">
+	<i *ngIf="number <= stars" (click)="onClick(number)" (mouseover)="onHover(number,stars)" (mouseleave)="onHoverEnd(stars)" class="material-icons tiny" >star</i>
+	<i *ngIf="highestRating >= number && stars < number" (click)="onClick(number)" (mouseover)="onHover(number)" (mouseleave)="onHoverEnd(stars)" class="material-icons tiny" >star_border</i>
+</ng-container>

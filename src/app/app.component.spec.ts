@@ -17,7 +17,7 @@ describe(`App`, () => {
   // async beforeEach
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AppComponent ],
+      declarations: [ AppComponent],
       schemas: [NO_ERRORS_SCHEMA],
       providers: [AppState]
     })
