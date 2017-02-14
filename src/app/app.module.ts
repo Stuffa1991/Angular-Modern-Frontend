@@ -30,7 +30,7 @@ import { FavoriteProductComponent, LikeProductComponent, StarProductComponent } 
 import '../styles/main.scss';
 import "materialize-css";
 import "angular2-materialize";
-import {MaterializeDirective} from "angular2-materialize";
+import { MaterializeDirective } from "angular2-materialize";
 
 /**
  * `AppModule` is the main entry point into Angular2's bootstraping process
