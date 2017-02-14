@@ -8,18 +8,22 @@ import {
  * see https://github.com/gdi2290/es6-promise-loader for more info
  */
 
-console.log('`ChildDetail` component loaded asynchronously');
-
 @Component({
-  selector: 'child-detail',
+  selector: 'product',
   template: `
-    <h1>Hello from Child Detail</h1>    
+    <h1>Hello from Products</h1>
+    <span>
+      <a [routerLink]=" ['./child-product'] ">
+        Child Product
+      </a>
+    </span>
+    <router-outlet></router-outlet>
   `,
 })
-export class ChildDetailComponent implements OnInit {
+export class ProductsComponent implements OnInit {
 
   public ngOnInit() {
-    console.log('hello `ChildDetail` component');
+    console.log('hello `Product` component');
   }
 
 }
