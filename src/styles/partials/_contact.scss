@@ -1,9 +1,59 @@
 .contact {
+	h4 {
+		text-transform: uppercase;
+		margin-bottom: 50px;
+		font-size: 1.75rem;
+	}
+
 	.btn {
 		$button: #ff674f;
 		background-color: $button;
 		&:active, &:hover {
 			background-color: lighten($button, 5%);
+		}
+	}
+	
+	label {
+		display: inline-block;
+	  	width: 30px;
+	  	text-align: right;
+	  	font-size: 0.875rem;
+	  	text-transform: uppercase;
+	  	letter-spacing: 1px;
+	}
+
+	input {
+		border: 1px solid #7e7f84;
+    	height: 30px;
+    	font-size: 0.875rem;
+    	text-transform: uppercase;
+    	letter-spacing: 1px;
+    	//Does so the padding doesnt make the div bigger
+    	-webkit-box-sizing: border-box;
+     	-moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 10px;
+        &.ng-invalid.ng-touched {
+			border-bottom: 2px solid red;
+		}
+
+		&.ng-valid.ng-touched {
+			border-bottom: 2px solid green;
+		}
+	}
+
+	textarea {
+		padding: 10px;
+		min-height: 150px;
+		-webkit-box-sizing: border-box;
+     	-moz-box-sizing: border-box;
+        box-sizing: border-box;
+        &.ng-invalid.ng-touched {
+			border-bottom: 2px solid red;
+		}
+
+		&.ng-valid.ng-touched {
+			border-bottom: 2px solid green;
 		}
 	}
 }

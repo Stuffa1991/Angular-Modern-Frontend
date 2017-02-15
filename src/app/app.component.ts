@@ -1,8 +1,10 @@
 /*
  * Angular 2 decorators and services
  */
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation,  } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
+declare var $:any;
+declare var Materialize:any;
 
 /*
  * App Component
@@ -17,6 +19,15 @@ import { Router, NavigationEnd } from '@angular/router';
 export class AppComponent implements OnInit {
 
   constructor(private _router: Router) {}
+
+  public ngAfterViewInit() {
+     $(".dropdown-button").dropdown();
+     $(".button-collapse").sideNav({
+       closeOnClick: true,
+       edge: 'right',
+       draggable: true
+     });
+   }
 
   public ngOnInit() {
     //Fix to scroll to top everytime we change route

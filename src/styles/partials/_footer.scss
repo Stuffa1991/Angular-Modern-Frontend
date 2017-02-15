@@ -19,6 +19,14 @@ newsletter {
 			background-color: #FFFFFF;
 			color: #000000;
 			width: 240px;
+
+			&.ng-invalid.ng-touched {
+				border-bottom: 2px solid red;
+			}
+
+			&.ng-valid.ng-touched {
+				border-bottom: 2px solid green;
+			}
 		}
 		button {
 			@include margin(null null null 6px);
@@ -71,6 +79,6 @@ app {
 	flex-direction: column;
 }
 
-router-outlet, no-content {
+router-outlet {
 	flex: 1 0 auto;
 }

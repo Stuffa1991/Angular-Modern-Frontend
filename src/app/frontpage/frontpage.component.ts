@@ -16,10 +16,6 @@ export class FrontPageComponent implements OnInit {
 
  }
 
- public ngAfterViewInit() {
- 	$('.slider').slider({height: 650});
- }
-
  public ngOnInit() {
 	this.products = this._dataService.getProductData();
  }

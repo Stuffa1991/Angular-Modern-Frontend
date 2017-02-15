@@ -3,17 +3,62 @@
     <div class="row">
       <div class="col s10 m10 l10">
         <div class="nav-wrapper">
-          <ul>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="side-nav" id="mobile-demo">
+            <li>
+              <a [routerLink]=" ['/frontpage'] " routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
+                Home
+              </a>
+            </li>
+            <li>
+              <a [routerLink]=" ['./#'] " routerLinkActive="active" [routerLinkActiveOptions]= "">
+                Women
+              </a>
+            </li>
+            <li>
+              <a [routerLink]=" ['./#'] " routerLinkActive="active" [routerLinkActiveOptions]= "">
+                Kids
+              </a>
+            </li>
+            <li>
+              <a [routerLink]=" ['./#'] " routerLinkActive="active" [routerLinkActiveOptions]= "">
+                Sale
+              </a>
+            </li>
+            <li>
+              <a [routerLink]=" ['./#'] " routerLinkActive="active" [routerLinkActiveOptions]= "">
+                About Us
+              </a>
+            </li>
+            <li>
+              <a [routerLink]=" ['./contact'] " routerLinkActive="active" [routerLinkActiveOptions]= "">
+                Contact
+              </a>
+            </li>
+          </ul>
+          <ul class="left hide-on-med-and-down">
             <li class="nav-item">
               <a [routerLink]=" ['/frontpage'] " routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
                 Home
               </a>
             </li>
             <li class="nav-item">
-              <a [routerLink]=" ['./#'] " routerLinkActive="active" [routerLinkActiveOptions]= "">
-                Men
+              <a class="dropdown-button" href="#!" data-hover="true" data-beloworigin="true" data-activates="dropdown1">
+                Dropdown
               </a>
             </li>
+            <!-- Dropdown Structure -->
+            <ul id="dropdown1" class="dropdown-content">
+              <li>
+                <a href="">one</a>
+              </li>
+              <li>
+                <a href="">two</a>
+              </li>
+              <li>
+                <a href="">three</a>
+              </li>
+            </ul>
             <li class="nav-item">
               <a [routerLink]=" ['./#'] " routerLinkActive="active" [routerLinkActiveOptions]= "">
                 Women
@@ -42,7 +87,7 @@
           </ul>
         </div>
       </div>
-      <div class="col s2 m2 l2">
+      <div class="col s2 m2 l2 left hide-on-med-and-down">
         <form action="#" accept-charset="utf-8">
           <div class="input-field col s12 m12 l12">
             <i id="search-icon" class="tiny material-icons prefix">search</i><input id="search-input" placeholder="Search.." type="search" value="" class="validate">
