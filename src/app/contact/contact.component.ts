@@ -5,9 +5,9 @@ declare var $:any;
 declare var Materialize:any;
 
 class ContactMessage {
-	name: string,
-	email: string,
-	message: string
+	name: string;
+	email: string;
+	message: string;
 }
 
 @Component({
