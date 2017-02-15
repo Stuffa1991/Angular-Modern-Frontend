@@ -1,6 +1,8 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { IProduct, DataService } from '../data/';
+declare var $:any;
+declare var Materialize:any;
 
 @Component({
  selector: 'frontpage',
