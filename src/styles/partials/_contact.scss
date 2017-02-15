@@ -1,0 +1,9 @@
+.contact {
+	.btn {
+		$button: #ff674f;
+		background-color: $button;
+		&:active, &:hover {
+			background-color: lighten($button, 5%);
+		}
+	}
+}

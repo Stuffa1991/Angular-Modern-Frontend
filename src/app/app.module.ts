@@ -25,6 +25,7 @@ import { AppComponent } from './app.component';
 import { NoContentComponent } from './no-content';
 import { UpperNavComponent, NavigationComponent, FootComponent, NewsletterComponent, SliderComponent } from './common';
 import { FrontPageComponent } from './frontpage';
+import { ContactComponent } from './contact';
 import { FavoriteProductComponent, LikeProductComponent, StarProductComponent } from './+products';
 
 import '../styles/main.scss';
@@ -42,6 +43,7 @@ import { MaterializeDirective } from "angular2-materialize";
     MaterializeDirective,
     NoContentComponent,
     FrontPageComponent,
+    ContactComponent,
     UpperNavComponent,
     NavigationComponent,
     FootComponent,
