@@ -15,8 +15,7 @@ export class FrontPageComponent implements OnInit {
  }
 
  public ngAfterViewInit() {
- 	console.log('Hello');
- 	$('.carousel.carousel-slider').carousel({fullWidth: true});
+ 	$('.slider').slider({height: 650});
  }
 
  public ngOnInit() {
@@ -28,7 +27,7 @@ export class FrontPageComponent implements OnInit {
  	if(!product.isLiked){
  		Materialize.toast('Awesome you liked a product', 4000) // 4000 is the duration of the toast
  	} else {
- 		Materialize.toast('Your like was removed from this product', 4000) // 4000 is the duration of the toast
+ 		Materialize.toast('Like was removed from this product', 4000) // 4000 is the duration of the toast
  	}
  }
 
@@ -38,7 +37,7 @@ export class FrontPageComponent implements OnInit {
  	if(!product.isFavorited){
  		Materialize.toast('Awesome you added this product to your favorites', 4000) // 4000 is the duration of the toast
  	} else {
- 		Materialize.toast('Product removed from your favorites', 4000) // 4000 is the duration of the toast
+ 		Materialize.toast('Product removed from favorites', 4000) // 4000 is the duration of the toast
  	}
  	
  }

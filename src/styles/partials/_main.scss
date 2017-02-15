@@ -60,10 +60,15 @@ main {
 			border: 1px solid $grey-color;
 		    padding: 0px;
 			@include box-sizing(border-box);
+			
+			.product-image {
+				min-height: 230px;
+				width: auto;
 
-			img{
-				border-top: 1px solid $grey-color;
-				padding: 20px;
+				img{
+					max-height: 228px;
+					max-width: 250px;
+				}
 			}
 		    p {
 		    	display: -webkit-box;

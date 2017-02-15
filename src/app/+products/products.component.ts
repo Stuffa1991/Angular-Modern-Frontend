@@ -23,7 +23,7 @@ import {
 export class ProductsComponent implements OnInit {
 
   public ngOnInit() {
-    console.log('hello `Product` component');
+    
   }
 
 }

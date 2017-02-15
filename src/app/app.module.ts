@@ -23,7 +23,7 @@ import { ROUTES } from './app.routes';
 // App is our top level component
 import { AppComponent } from './app.component';
 import { NoContentComponent } from './no-content';
-import { UpperNavComponent, NavigationComponent, FootComponent, NewsletterComponent } from './common';
+import { UpperNavComponent, NavigationComponent, FootComponent, NewsletterComponent, SliderComponent } from './common';
 import { FrontPageComponent } from './frontpage';
 import { FavoriteProductComponent, LikeProductComponent, StarProductComponent } from './+products';
 
@@ -48,7 +48,8 @@ import { MaterializeDirective } from "angular2-materialize";
     NewsletterComponent,
     FavoriteProductComponent,
     LikeProductComponent,
-    StarProductComponent
+    StarProductComponent,
+    SliderComponent
   ],
   imports: [ // import Angular's modules
     BrowserModule,

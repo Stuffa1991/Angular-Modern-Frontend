@@ -1,3 +1,28 @@
-.carousel-slider {
-	min-height: 600px;
+.slider {
+	.slides li .caption {
+		left: 0;
+		.text {
+			h3 {
+				text-transform: uppercase;
+			}
+
+			a {
+				background-color: $orange-color;
+			}
+		}
+		padding: 10px;
+		background-color: rgba(0,0,0,0.5);
+	}
+
+	.indicators {
+		top: 600px;
+		z-index: 100;
+		.indicator-item {
+			border: 1px solid #FFFFFF;
+			background-color: transparent;
+			&.active {
+				background-color: #FFFFFF;
+			}
+		}
+	}
 }
