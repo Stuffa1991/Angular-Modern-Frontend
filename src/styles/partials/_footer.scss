@@ -1,6 +1,7 @@
 /* FOOTER */
 
 newsletter {
+	min-height: 106px;
 	background-color: $orange-color;
 	color: #FFFFFF;
 
@@ -70,6 +71,6 @@ app {
 	flex-direction: column;
 }
 
-main {
+router-outlet, no-content {
 	flex: 1 0 auto;
 }

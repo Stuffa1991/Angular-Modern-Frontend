@@ -6,6 +6,7 @@ import { DataResolver } from './app.resolver';
 
 export const ROUTES: Routes = [
   { path: '',      component: FrontPageComponent },
+  { path: 'home', component: FrontPageComponent },
   { path: 'frontpage',  component: FrontPageComponent },
   { path: 'products', loadChildren: './+products#ProductsModule'},
   { path: '**', component: NoContentComponent },

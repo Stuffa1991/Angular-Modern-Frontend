@@ -14,11 +14,11 @@ declare var $:any;
   templateUrl: 'product.component.html',
 })
 export class ProductComponent implements OnInit {
-  private id: number;
-  private saving: number;
-  private sub: any;
-  private product: IProduct;
-  private activePhoto: number;
+  public id: number;
+  public saving: number;
+  public sub: any;
+  public product: IProduct;
+  public activePhoto: number;
 
   constructor(private _route: ActivatedRoute, private _dataService:DataService) {}
 

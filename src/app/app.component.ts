@@ -16,11 +16,11 @@ import { Router, NavigationEnd } from '@angular/router';
 
 export class AppComponent implements OnInit {
 
-  constructor(private router: Router) {}
+  constructor(private _router: Router) {}
 
   public ngOnInit() {
     //Fix to scroll to top everytime we change route
-    this.router.events.subscribe((evt) => {
+    this._router.events.subscribe((evt) => {
       if (!(evt instanceof NavigationEnd)) {
           return;
       }
