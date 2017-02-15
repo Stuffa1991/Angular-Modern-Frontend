@@ -35,7 +35,7 @@ export class ProductComponent implements OnInit {
        // In a real app: dispatch action to load the details here.
 
        this.product = this._dataService.getProductDataById(this.id);
-
+       
        this.activePhoto = 0;
     });
   }
