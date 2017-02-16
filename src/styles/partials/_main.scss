@@ -61,12 +61,12 @@ main {
 			@include box-sizing(border-box);
 			
 			.product-image {
-				min-height: 230px;
+				height: 228px;
 				width: auto;
 
 				img{
 					max-height: 228px;
-					max-width: 250px;
+					width: auto;
 				}
 			}
 		    p {
