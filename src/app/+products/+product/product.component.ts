@@ -1,7 +1,6 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { IProduct, DataService } from '../../data/';
-declare var $:any;
 
 /*
  * We're loading this component asynchronously

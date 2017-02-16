@@ -1,10 +1,8 @@
 /*
  * Angular 2 decorators and services
  */
-import { Component, OnInit, ViewEncapsulation,  } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, AfterViewInit  } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
-declare var $:any;
-declare var Materialize:any;
 
 /*
  * App Component

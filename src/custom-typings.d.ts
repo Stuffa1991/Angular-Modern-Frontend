@@ -60,6 +60,8 @@ declare module 'modern-lru' {
 declare var ENV: string;
 declare var HMR: boolean;
 declare var System: SystemJS;
+declare var $:any;
+declare var Materialize:any;
 
 interface SystemJS {
   import: (path?: string) => Promise<any>;

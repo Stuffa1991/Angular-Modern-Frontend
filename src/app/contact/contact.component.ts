@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { NgForm } from '@angular/forms'
-declare var $:any;
-declare var Materialize:any;
 
 class ContactMessage {
 	name: string;
