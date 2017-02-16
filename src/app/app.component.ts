@@ -33,6 +33,7 @@ export class AppComponent implements OnInit {
       if (!(evt instanceof NavigationEnd)) {
           return;
       }
+      document.documentElement.scrollTop = 0;
       document.body.scrollTop = 0;
     });
   }
